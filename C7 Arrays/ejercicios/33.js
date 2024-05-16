@@ -7,6 +7,15 @@ function combine(str1, str2, str3) {
   // combine("abc", "12345", "") == "a1b2c345"
   // combine("abc", "12345", "67") == "a16b27c345"
   // Tu código:
+
+  var finBucle = Math.max(str1.length,str2.length,str3.length)
+  var acu = "";
+  for (var i = 0; i < finBucle; i++){
+    if (str1[i] !== undefined)acu += str1[i];
+    if (str2[i] !== undefined)acu += str2[i];
+    if (str3[i] !== undefined)acu += str3[i];
+  } return acu;
+    
 }
 
 module.exports = combine;
